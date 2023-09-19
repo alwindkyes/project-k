@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "TdRmMp+WTaT+p/k8NXzwSA91k/uen6cD+LZYZh1COAw=",
+  "Source": "project-k",
+  "BasePath": "_content/project-k",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "project-k/wwwroot",
+      "Source": "project-k",
+      "ContentRoot": "/home/hmspl/project-k/wwwroot/",
+      "BasePath": "_content/project-k",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/hmspl/project-k/wwwroot/uploads/638287310593020470.png",
+      "SourceId": "project-k",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/hmspl/project-k/wwwroot/",
+      "BasePath": "_content/project-k",
+      "RelativePath": "uploads/638287310593020470.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/638287310593020470.png"
+    },
+    {
+      "Identity": "/home/hmspl/project-k/wwwroot/uploads/beach (17).png",
+      "SourceId": "project-k",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/hmspl/project-k/wwwroot/",
+      "BasePath": "_content/project-k",
+      "RelativePath": "uploads/beach (17).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/beach (17).png"
+    },
+    {
+      "Identity": "/home/hmspl/project-k/wwwroot/uploads/italy-1.jpg",
+      "SourceId": "project-k",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/hmspl/project-k/wwwroot/",
+      "BasePath": "_content/project-k",
+      "RelativePath": "uploads/italy-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/italy-1.jpg"
+    }
+  ]
+}
