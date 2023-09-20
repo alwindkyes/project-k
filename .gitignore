@@ -1,0 +1,34 @@
+# .gitignore file for a .NET Core project
+
+# Visual Studio Code directories
+.vscode/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider files
+.idea/
+
+# User-specific files from Rider
+.idea/
+
+# User-specific files from Visual Studio
+.vscode/
+.vscode/
+
+# Build directories
+/bin/
+/obj/
+/bin/
+/obj/
+/.dotnet/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/bin/
+**/obj/
