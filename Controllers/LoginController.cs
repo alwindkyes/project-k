@@ -24,7 +24,8 @@ public class LoginController : ControllerBase
             var response = new Token();
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.UniqueName, request.username)
+                new Claim(JwtRegisteredClaimNames.UniqueName, request.username),
+                new Claim(ClaimTypes.Role , "Admin")
             };
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);

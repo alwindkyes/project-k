@@ -20,12 +20,6 @@ public class FileController : ControllerBase
     [HttpPost("upload")]
     public IActionResult UploadFile(IFormFile file)
     {
-        Console.WriteLine("ContentDisposition " + file.ContentDisposition);
-        Console.WriteLine("ContentType " + file.ContentType);
-        Console.WriteLine("FileName " + file.FileName);
-        Console.WriteLine("Headers " + file.Headers);
-        Console.WriteLine("Length " + file.Length);
-        Console.WriteLine("Name " + file.Name);
         if (file == null || file.Length <= 0)
         {
             return BadRequest(new { statusMessage = "Invalid file" });
@@ -34,7 +28,7 @@ public class FileController : ControllerBase
         var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", "pdf" };
         var fileExtension = Path.GetExtension(file.FileName);
 
-        if (!allowedExtensions.Contains(fileExtension.ToLower()))
+        if (!allowedExtensions.Contains(fileExtension.ToLower()))   
         {
             return BadRequest(new { statusMessage = "Invalid file format. Only jpg, jpeg, png, pdf formats are allowed" });
         }
@@ -42,7 +36,6 @@ public class FileController : ControllerBase
         var fileName = DateTime.Now.Ticks.ToString() + fileExtension;
 
         var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", fileName);
-        Console.WriteLine(filePath);
 
         if (System.IO.File.Exists(filePath))
         {
@@ -73,7 +66,6 @@ public class FileController : ControllerBase
             FileName = fileName,
         };
 
-        Console.WriteLine("Name " + contentType);
         Response.Headers["Content-Disposition"] = contentDispositionHeaderValue.ToString();
 
         return File(fileStream, contentType);
@@ -85,7 +77,6 @@ public class FileController : ControllerBase
         var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", fileName);
         if (System.IO.File.Exists(filePath))
         {
-            Console.WriteLine("System.IO.File.Exists(filePath) " + System.IO.File.Exists(filePath));
             System.IO.File.Delete(filePath);
             return Ok(new { statusMessage = "File successfully deleted!" });
         }

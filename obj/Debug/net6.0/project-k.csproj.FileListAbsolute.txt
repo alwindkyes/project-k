@@ -60,3 +60,6 @@
 /home/hmspl/project-k/obj/Debug/net6.0/ref/project-k.dll
 /home/hmspl/project-k/obj/Debug/net6.0/project-k.pdb
 /home/hmspl/project-k/obj/Debug/net6.0/project-k.genruntimeconfig.cache
+/home/hmspl/project-k/bin/Debug/net6.0/Scrutor.dll
+/home/hmspl/project-k/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.dll
+/home/hmspl/project-k/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

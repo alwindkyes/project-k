@@ -36,7 +36,7 @@ public class UserController : ControllerBase
     {
         user.Id = count + 1;
         users[count++] = user;
-        return CreatedAtAction(nameof(Person), new { id = user.Id }, user);
+        return CreatedAtAction(nameof(CreateUser), new { id = user.Id }, user);
     }
 
     [HttpPut("{id}")]
